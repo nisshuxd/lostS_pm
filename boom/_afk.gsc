@@ -9,13 +9,13 @@ init()
 
 AFKMonitor()
 {
-    self endon("disconnect");
+    	self endon("disconnect");
 	self endon("joined_spectators");
-    self endon("game_ended");
+    	self endon("game_ended");
 	level endon ("vote started");
 	self endon ("isKnifing");
 	self endon ( "inintro" );
-	hmmmmm = 0;
+	afktime = 0;
 	while(isAlive(self))
 	{
 		ori = self.origin;
@@ -25,17 +25,17 @@ AFKMonitor()
 		{
 			if(self.origin == ori && angles == self.angles)
 			{
-				hmmmmm++;
+				afktime++;
 			}
 			else
 			{
-				hmmmmm = 0;
+				afktime = 0;
 			}
-			if(hmmmmm == 30)
+			if(afktime == 30)
 			{
 				self iPrintlnBOld("^1You Appear To Be ^1AFK!");
 			}
-			if(hmmmmm >= 40)
+			if(afktime >= 40)
 			{
 				self.sessionteam = "spectator";
 				self.sessionstate = "spectator";
@@ -47,7 +47,7 @@ AFKMonitor()
 		}
 		else	
 		{
-			hmmmmm = 0;
+			afktime = 0;
 		}
 	}
 }
