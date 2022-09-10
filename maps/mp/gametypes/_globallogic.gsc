@@ -420,8 +420,7 @@ playMusic()
 				self playLocalSound( "kniferound" + song ); 
 			}
 			else if (self.pers["kr_music"] == 1){
-				wait 5;
-				self iprintln("^0>> ^2You Muted Knife Music,^5 Turn On To Hear The Song!^7");
+				self iPrintLnBold("^2You Muted Knife Music,^5 Turn On To Hear The Song!^7");
 				
 			}
 }

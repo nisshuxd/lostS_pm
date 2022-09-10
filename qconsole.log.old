@@ -1,0 +1,103 @@
+
+Logfile opened on Sat Sep 10 09:16:56 2022
+
+
+^1Error: Could not load stringtable "mp/flagicontable.csv".
+By using this software you agree to the usage conditions you can find at https://github.com/callofduty4x/CoD4x_Server#usage-conditions-for-server-hosters
+-----------------------------------
+^4Calculate referenced files checksums...
+^4CRC32 for Mods/lostS_pm/ls_images.iwd is eb612a80 Len 11522922
+^4CRC32 for Mods/lostS_pm/ls_pml220.iwd is 88a6978c Len 91915
+^4CRC32 for Mods/lostS_pm/ls_sounds.iwd is c091132f Len 23938988
+^4CRC32 for main/iw_11.iwd is e9cf411f Len 151420446
+^4CRC32 for zone/english/code_post_gfx_mp.ff is b144581c Len 89196
+^4CRC32 for zone/english/common_mp.ff is 4ef7a074 Len 13517381
+^4CRC32 for Mods/lostS_pm/mod.ff is f4679068 Len 497340
+^4CRC32 for zone/english/mp_backlot.ff is f4cc856b Len 39998207
+^1Error: Can't find map losts_pm
+execing server.cfg
+Resolving cod4master.activision.com 
+Sending master heartbeat from 0.0.0.0:28960 to 84.21.7.14:20810
+Sending master heartbeat from 0.0.0.0:28960 to 188.165.57.239:20810
+cod4master.activision.com resolved to 185.34.107.159:20810
+^5Hitch warning: 11349 msec frame time
+Resolving cod4master.activision.com
+cod4master.activision.com resolved to 185.34.107.159:20800
+Masterserver needs token to complete registration
+Masterserver needs token to complete registration
+Can not register server on the masterserver. Server needs to provide a valid token in cvar sv_authtoken.
+Can not register server on the masterserver. Server needs to provide a valid token in cvar sv_authtoken.
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Going from CS_FREE to CS_CONNECTED for Icylop num 0 from: 192.168.8.127:28961<=>0.0.0.0:28960
+Sending master heartbeat from 0.0.0.0:28960 to 188.165.57.239:20810
+Sending master heartbeat from 0.0.0.0:28960 to 84.21.7.14:20810
+Masterserver needs token to complete registration
+Masterserver needs token to complete registration
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Received packet 0 of stats data
+Can not register server on the masterserver. Server needs to provide a valid token in cvar sv_authtoken.
+Can not register server on the masterserver. Server needs to provide a valid token in cvar sv_authtoken.
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+GetGeoLocation(): Missing file GeoIP.dat
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+==== ShutdownGame (0) ====
+------- Game Initialization -------
+gamename: Call of Duty 4
+gamedate: Feb 12 2009
+-----------------------------------
+GetGeoLocation(): Missing file GeoIP.dat
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Player Icylop^7, 0 dropped: EXE_DISCONNECTED
+Sending master heartbeat from 0.0.0.0:28960 to 188.165.57.239:20810
+Sending master heartbeat from 0.0.0.0:28960 to 84.21.7.14:20810
+Masterserver needs token to complete registration
+Masterserver needs token to complete registration
+Going from CS_ZOMBIE to CS_FREE for client 0
+Can not register server on the masterserver. Server needs to provide a valid token in cvar sv_authtoken.
+Can not register server on the masterserver. Server needs to provide a valid token in cvar sv_authtoken.
+==== ShutdownGame (0) ====
+------- Game Initialization -------
+gamename: Call of Duty 4
+gamedate: Feb 12 2009
+-----------------------------------
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+Steam: Server failed to connect. Is your sv_steamserverlogintoken still valid?
+==== ShutdownGame (0) ====
+------- Game Initialization -------
+gamename: Call of Duty 4
+gamedate: Feb 12 2009
+-----------------------------------
+quitting...
+All plugins have terminated
+----- Server Shutdown -----
+
+With the reason: EXE_SERVERQUIT
+==== ShutdownGame (1) ====
+Sending master heartbeat from 0.0.0.0:28960 to 188.165.57.239:20810
+Sending master heartbeat from 0.0.0.0:28960 to 84.21.7.14:20810
+---------------------------
+Unloading assets from fastfile 'mp_backlot' and deleting all assets
+Unloading assets from fastfile 'mod' and deleting all assets
+Unloading assets from fastfile 'common_mp' and deleting all assets
+Unloading assets from fastfile 'localized_code_post_gfx_mp' and deleting all assets
+Unloading assets from fastfile 'code_post_gfx_mp' and deleting all assets
+Unloaded fastfile 'mp_backlot'
+PMem_Free( mp_backlot, Low )
+PMem_Free( mp_backlot, High )
+Unloaded fastfile 'mod'
+PMem_Free( mod, Low )
+PMem_Free( mod, High )
+Unloaded fastfile 'common_mp'
+PMem_Free( common_mp, Low )
+PMem_Free( common_mp, High )
+Unloaded fastfile 'localized_code_post_gfx_mp'
+PMem_Free( localized_code_post_gfx_mp, Low )
+PMem_Free( localized_code_post_gfx_mp, High )
+Unloaded fastfile 'code_post_gfx_mp'
+PMem_Free( code_post_gfx_mp, Low )
+PMem_Free( code_post_gfx_mp, High )

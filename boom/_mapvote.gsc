@@ -1,3 +1,5 @@
+#include maps\mp\_utility;
+#include maps\mp\gametypes\_hud_util;
 init()
 {
 	level.mapvote= 1;
@@ -17,9 +19,9 @@ init()
 
 notifySBoard()
 {
-	iprintln("^2Press ^0[Fire] ^2To Make a Vote!");
+	iprintln("^3Press ^5[Fire] ^3To Make a Vote!");
 	wait 8;
-	iprintln("^2Press ^0[Fire] ^2To Make a Vote!");
+	iprintln("^3Press ^5[Fire] ^3To Make a Vote!");
 }
 
 startMapVote()
@@ -302,7 +304,7 @@ PlayerVote()
 			if (self.votechoice == 6)
 				self.votechoice = 0;
 
-			self iprintln("^2Your Vote: ^0" + level.mapcandidate[self.votechoice]["mapname"]);
+			self iprintln("^3You Voted For ^5[ " + level.mapcandidate[self.votechoice]["mapname"] + " ]");
 			self.vote_indicator.y = 124 + self.votechoice * 20;			
 			self.vote_indicator.color = colors[self.votechoice];
 			self playLocalSound("ui_mp_timer_countdown");
@@ -366,14 +368,12 @@ SetMapWinner(winner)
 
 	wait 0.05;
 
-	//if("VotingDone")
-	//{
-		iprintlnbold("^0Map Winner");
+		iprintlnbold("^5Next Map");
 		wait 1;
-		iprintlnbold("^2" + mapname);
+		iprintlnbold("^2" + mapname );
 		wait 1;
-		iprintlnbold("^0" + GetGametypeName(gametype));
-	//}
+		iprintlnbold("^5" + GetGametypeName(gametype) );
+		wait 2;
 
 	level.MapVoteHud[0] fadeOverTime (1);
 	level.MapVoteHud[1] fadeOverTime (1);

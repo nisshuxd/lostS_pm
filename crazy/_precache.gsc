@@ -12,7 +12,6 @@ init()
 	precacheShader("gradient_bottom");
 	precacheShader("line_horizontal");
 	precacheShader("flare");
-	precacheShader("sles_killcam_logo");
 	
 	//precacheShader( "hud_us_throwingknife" );
 	//precacheModel("weapon_parabolic_knife");

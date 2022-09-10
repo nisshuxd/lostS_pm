@@ -16,7 +16,7 @@ init()
 	level thread duffman\_anticheat::init();
 	level thread duffman\_teambalance::init();
 
-	//thread Rules();
+	thread Rules();
 	//thread Box();
 
 	level thread onPlayerConnect();
@@ -26,7 +26,6 @@ init()
 	thread crazy\cmd::main();
 	level thread crazy\_flags::init();
 
-	//thread crazy\_roofbattle::init();
 	//thread crazy\_hostname::init();
 	//thread crazy\_firstblood::Firstblood(attacker);
 	//self thread frames\_snipermode::init();
@@ -47,7 +46,6 @@ onPlayerSpawned()
 	for(;;)
 	{
 		self waittill("spawned");
-		self thread NoAds();
 
 	}
 }
@@ -81,150 +79,22 @@ getWeatherOrigin()
 
 	return pos;
 }
-NoAds()
-{
-	self notify("sdfsdfsf");
-	self endon("disconnect");
-	self endon("sdfsdfsf");
-
-	for(;;)
-	{
-		if ( issubstr(self.name, "www.") || issubstr(self.name, ".de") ||issubstr(self.name, ".com") ||issubstr(self.name, ".at") ||issubstr(self.name, ".net") ||issubstr(self.name, ".org") ||issubstr(self.name, ".info") ||issubstr(self.name, ".tk") ||issubstr(self.name, ".ru") ||issubstr(self.name, ".pl") ||issubstr(self.name, ":289") ||issubstr(self.name, ".ga"))
-		{
-			self crazy\_common::ClientCmd("name TROLOLOLOL");
-			self iPrintlnBold("NO ADVERTISEMENT, your name was changed");
-		}
-		wait 2;
-	}
-}
-
 
 Rules()
 {
 	level endon("disconnect");
 
-	if( isDefined( level.logoText ) )
-		level.logoText destroy();
-
-		level.logoText = newHudElem();
-		level.logoText.y = 480;
-		level.logoText.x = 0;
-		level.logoText.alignX = "center";
-		level.logoText.alignY = "bottom";
-		level.logoText.horzAlign = "center_safearea";
-		level.logoText.foreground = 1;
-		level.logoText.hidewheninmenu = true;
-		level.logoText.archived = true;
-
-		level.logoText.alpha = 0;
-		level.logoText.sort = 888;
-		level.logoText.fontScale = 1.4;
-		level.logoText.archieved = true;
-
-
-		level.logoText.glowcolor = (0.4,0,0);
-		level.logoText.glowalpha = 2;
-
 	for(;;)
 	{
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^2Website RusCOD Gaming - ^5ruscod.su");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^3Our Discord server ^0- ^4https://discord.gg/v8HtfMKXeq");
-		wait 4;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^2you can find ^1the rules of the server on our ^0website ^7- ^5ruscod.su");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^5thanks for ^8playing with us");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^3Server admins ^0- ^2IIIpaM, ^6Vani$imu$, ^3GeRmaJax");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^6Mod by ^2GeRmaJax, ^3Vani$imu$");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^1press F ^4to use spray");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^5FOV FPS ^2works on 8 9 buttons");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^6our VK group ^0- ^1https://vk.com/ruscodgaming");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^3visit our other servers ^4Sniper mod: - 45.137.190.174:28962");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^7No insulting");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^7No cheating");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^2you can also contact the Admins in ^0our Discord server, ^3as well as on our website");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 1;
-		level.logoText setText("^2follow the rules of the ^0server");
-		wait 5;
-		level.logoText fadeOverTime(1);
-		level.logoText.alpha = 0;
-		wait 1; 
+		wait 10;
+		exec("say ^7Use ^1!h ^2to View Your ^3Commands.");
+		wait 25;
+		exec("say ^2NeeD Admin ^1? ^0Contact ^5Server Owners");
+		wait 25;
+		exec("say ^7Join Our TeamSpeak3 Server at ^3ts.lostsky.ga");
+		wait 25;
+		exec("say ^3Cheating ^7Will Get You ^1BANNED!");
+		wait 25;
 	}
 }
 
@@ -240,9 +110,15 @@ Box()
 	level.bottomBar[1].sort = 1001;
 	level.bottomBar[1] setShader("white", 900, 16);
 	level.bottomBar[1].alpha = 0.7;
-	level.bottomBar[1].glowAlpha = 0.3;
+	level.bottomBar[1].glowAlpha = 0.9;
 	level.bottomBar[1].color = (0,0,0);
 	level.bottomBar[1].foreground = false;
 	level.bottomBar[1].hidewheninmenu = true;
 	level.bottomBar[1].hiddenDuringUI = true;
+}
+
+removeADV()
+{
+	level.logoText.alpha = 0;
+	level.bottomBar.alpha = 0;
 }

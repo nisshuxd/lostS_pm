@@ -10,7 +10,7 @@ main()
 	setDvar( "scr_sd_numlives", 1 ); // [0->] (amount of lives)
 	setDvar( "scr_sd_planttime", 5 ); // [1->] (seconds)
 	setDvar( "scr_sd_playerrespawndelay", 0 ); // [0->] (seconds)
-	setDvar( "scr_sd_roundlimit", 2 ); // [0->] (points)
+	setDvar( "scr_sd_roundlimit", 24 ); // [0->] (points)
 	setDvar( "scr_sd_roundswitch", 10 ); // [0->] (points)
 	setDvar( "scr_sd_scorelimit", 13 ); // [0->] (points)
 	setDvar( "scr_sd_timelimit", 1.75 ); // [0->] (minutes)
@@ -213,11 +213,8 @@ main()
 	setDvar( "scr_hardcore", 0 ); // [0-1]
 	setDvar( "scr_teambalance", 1 );
 
-	setDvar( "sniper_mode", 0 ); //By Frames
-
-
 	// website
-	setDvar( "promod_hud_website", "^2Lost ^1Sky ^5Gaming ^0[ Promod ]" ); // (avoid "//" here)
+		setDvar( "promod_hud_website", "^2Lost ^1Sky ^5Gaming ^0[ Promod ]" );
 
 	// messagecenter
 	setDvar( "promod_mc_enable", 1 ); // [0-1]
@@ -225,10 +222,10 @@ main()
 	setDvar( "promod_mc_delay", 5); // [1->] (default delay in seconds between messages)
 	setDvar( "promod_mc_loopdelay", 10 ); // [1->] (delay in seconds until it starting over)
 	setDvar( "promod_mc_maxmessages", 10 ); // [1->] (set this equivalent to number of messages)
-	setDvar( "promod_mc_message_1", "Welcome to ^1Lost ^2Sky ^5GaminG" );
-	setDvar( "promod_mc_message_2", "^2Mod by: ^0MrBoom#6276" );
-	setDvar( "promod_mc_message_3", "^2Server Owners: ^5LS| Loki, LS| BuNNs" );
-	setDvar( "promod_mc_message_4", "^2NeeD Admin ^1? ^0Contact ^5Server Owners" );
+	//( "promod_mc_message_1", "Welcome to ^1Lost ^2Sky ^5GaminG" );
+	//setDvar( "promod_mc_message_2", "^2Mod by: ^0MrBoom#6276" );
+	//setDvar( "promod_mc_message_3", "^2Server Owners: ^5LS| Loki, LS| BuNNs" );
+	//( "promod_mc_message_1", "^2NeeD Admin ^1? ^0Contact ^5Server Owners" );
 	setDvar( "promod_mc_message_6", "" ); 
 	setDvar( "promod_mc_messagedelay_1", 5 ); // [1->] (overrides default delay in seconds between messages, e.g special messages)
 	setDvar( "promod_mc_messagedelay_2", 5 ); 

@@ -18,7 +18,7 @@ main()
 		forceDvar("g_dropupspeedbase","10");
 		forceDvar("g_dropupspeedrand","5");
 		forceDvar("g_useholdtime","0");
-		forceDvar("jump_slowDownEnable","0");
+		forceDvar("jump_slowDownEnable","1");
 		if(isDefined(game["PROMOD_MATCH_MODE"])&&game["PROMOD_MATCH_MODE"]=="match")
 		{
 			forceDvar("g_maxdroppedweapons","16");

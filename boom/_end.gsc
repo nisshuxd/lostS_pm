@@ -1,3 +1,5 @@
+#include maps\mp\_utility;
+#include maps\mp\gametypes\_hud_util;
 init()
 {
 	level.movingEnding = spawn( "script_model", level.endingPoints[ 0 ][ 0 ] );
@@ -17,7 +19,8 @@ init()
 		player setClientDvars( "ui_hud_hardcore", 1,"cg_drawSpectatorMessages", 0,"g_compassShowEnemies", 0 );
 	}
 
-	level thread duffman\_common::playSoundOnAllPlayers( "endmap" );
+	rand = (1+randomInt(2));
+	level thread duffman\_common::playSoundOnAllPlayers( "endmap" + rand);
 
  	thread boom\_credits::init();//Credits
 	
@@ -37,8 +40,6 @@ init()
 		level.movingEnding rotateTo( level.endingPoints[ i ][ 1 ], duration );
 		wait duration;
 	}
-
-  
 }
 
 //Thanks to Frames For The Arrays :P

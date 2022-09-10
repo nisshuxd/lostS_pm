@@ -184,9 +184,9 @@ avgPing()
 		}
 		if(isdefined(self.pers["avgping"]) && self.pers["avgping"]>0 && currentping>(self.pers["avgping"]*2))
 		{
-			self iprintln("^0>> ^1Lag Detected");
+			self iprintln("^0[ LAG ] ^1Detected!");
 		}
-		self iprintln("^0>> ^2AvgPing ^5[ " +self.pers["avgping"] + "^5 ]");
+		self iprintln("^0[ AvgPing ] ^5[ " +self.pers["avgping"] + "^5 ]");
 	}
 }
 

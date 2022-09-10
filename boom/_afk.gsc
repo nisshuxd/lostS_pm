@@ -9,9 +9,9 @@ init()
 
 AFKMonitor()
 {
-    	self endon("disconnect");
+    self endon("disconnect");
 	self endon("joined_spectators");
-    	self endon("game_ended");
+    self endon("game_ended");
 	level endon ("vote started");
 	self endon ("isKnifing");
 	self endon ( "inintro" );
@@ -40,8 +40,8 @@ AFKMonitor()
 				self.sessionteam = "spectator";
 				self.sessionstate = "spectator";
 				self [[level.spawnSpectator]]();
-				self notify("sdfsdfdsf");
-				iPrintln("^0>> ^0[ " +self.name + " ] ^5Appears To Be ^1AFK!");
+				self notify("killedlol");
+				iPrintln("^0[ AFKMonitor ] ^2[ " +self.name + " ] ^5Appears To Be ^1AFK!");
 				return;
 			}
 		}

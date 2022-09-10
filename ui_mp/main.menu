@@ -15,8 +15,8 @@
 		name			"main"
 		fullScreen		1
 		rect			0 0 640 480
-    soundloop  "music_mainmenu_mp"
-		focusColor		COLOR_FOCUSED
+    	soundloop  "music_mainmenu_mp"
+		focuscolor		0.03 0.96 0.86  0.9
 		onOpen
 		{ 
 			open main_text;
@@ -63,6 +63,8 @@
 			visible			1
 			decoration
 		}
+
+			#include "ui_mp/boomstyle.inc"
 
 		CHOICE_BUTTON_VIS( 1, "^1Join ^2|LS| ^5Promod", exec "connect 51.79.243.35:28960";, when( !localvarBool( ui_hideBack ) ) )
 		CHOICE_BUTTON_FOCUS_VIS( 2, "About Mod",;,setLocalVarBool ui_dev 1;setLocalVarBool ui_remod 0,setLocalVarBool ui_dev 0, when( !localvarBool( ui_hideBack ) )  )
@@ -185,7 +187,7 @@
 		}
 		itemDef 
 		{
-			text "Developer: MrBoom"
+			text "Developer: MrBoom#6276"
 			style 0
 			textscale .25 
 			textstyle 3

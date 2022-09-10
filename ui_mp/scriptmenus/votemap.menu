@@ -972,7 +972,7 @@
 		{
 			rect		17 -16 1 1 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
 			origin		0 0
-			exp text	( "^2Mod By ^1MrBoom" );
+			exp text	( "^2Mod By ^1MrBoom#6276" );
 			textfont	UI_FONT_OBJECTIVE
 			textscale	0.24
 			//textalign	ITEM_ALIGN_CENTER

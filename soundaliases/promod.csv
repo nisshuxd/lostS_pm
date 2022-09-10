@@ -35,7 +35,8 @@ endround23,,music/endround23.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,
 endround24,,music/endround24.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
 
 
-endmap,,music/endmap.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endmap1,,music/endmap1.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endmap2,,music/endmap2.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
 
 kniferound1,,music/kniferound1.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
 kniferound2,,music/kniferound2.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3

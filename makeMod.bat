@@ -1,5 +1,6 @@
 @echo off
-set modname=lostS_pm
+set MODNAME=lostS_pm
+set MAPNAME=mp_killhouse
 set COMPILEDIR=%CD%
 color 11
 title Lost Sky - Promod SnD Compiler
@@ -63,14 +64,11 @@ xcopy soundaliases ..\..\raw\soundaliases /SY
 xcopy fx ..\..\raw\fx /SY
 xcopy mp ..\..\raw\mp /SY
 xcopy weapons\mp ..\..\raw\weapons\mp /SY
-xcopy xanim ..\..\raw\xanim /SY
 xcopy xmodel ..\..\raw\xmodel /SY
-xcopy xmodelparts ..\..\raw\xmodelparts /SY
-xcopy xmodelsurfs ..\..\raw\xmodelsurfs /SY
+xcopy xanim ..\..\raw\xanim /SY
 xcopy ui ..\..\raw\ui /SY
 xcopy ui_mp ..\..\raw\ui_mp /SY
 xcopy english ..\..\raw\english /SY
-xcopy vision ..\..\raw\vision /SY
 xcopy animtrees ..\..\raw\animtrees /SYI > NUL
 echo    Copying source code...
 xcopy maps ..\..\raw\maps /SY
@@ -90,12 +88,14 @@ pause
 goto :MAKEOPTIONS
 :run_server
 echo  Starting Server:
-start D:\cod4_tools\cod4x18_dedrun.exe +set fs_basepath "D:\cod4_tools\" +set fs_homepath "D:\cod4_tools\" +set sv_punkbuster 0 +set pb_sv_enable 0 +map_rotate +sv_authorizemode 0 +set fs_game Mods/lostS_pm +map mp_killhouse +set r_xassetnum "material=2560 xmodel=1200 xanim=3200 image=3000" +set promod_mode custom_public + exec server.cfg +set g_gametype sd
+cd ..\..\
+cod4x18_dedrun.exe +set sv_punkbuster 0 +set pb_sv_enable 0 +map_rotate +sv_authorizemode 0 +set fs_game Mods/%MODNAME% +map %MODNAME% +set r_xassetnum "material=2560 xmodel=1200 xanim=3200 image=3000" +set promod_mode custom_public + exec server.cfg +set g_gametype sd
 echo ------------------------------
 goto :MAKEOPTIONS
 :run_mod
 echo  Starting Mod:
-start D:\cod4_tools\iw3mp.exe +set fs_game Mods/lostS_pm +set developer 2
+cd ..\..\
+iw3mp.exe +set fs_game Mods/%MODNAME% +set developer 2 +set developer_script 1
 echo ------------------------------
 goto :MAKEOPTIONS
 

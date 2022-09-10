@@ -1,11 +1,3 @@
-# Copyright (c) 2009-2017 Andreas Göransson <andreas.goransson@gmail.com>
-# Copyright (c) 2009-2017 Indrek Ardel <indrek@ardel.eu>
-#
-# This file is part of Call of Duty 4 Promod.
-#
-# Call of Duty 4 Promod is licensed under Promod Modder Ethical Public License.
-# Terms of license can be found in LICENSE.md document bundled with the project.
-
 localize,cgame
 
 menufile,ui_mp/promod.txt
@@ -134,8 +126,6 @@ fx,trails\trail_paper
 fx,trails\trail_fire
 
 material,sles_main_background
-material,sles_killcam_logo
-material,menu_button_backg
 material,menu_background
 material,menu_loading
 

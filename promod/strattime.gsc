@@ -105,12 +105,12 @@ stratTimer()
 	matchStartText.sort = 1001;
 
 	if( isDefined(game["PROMOD_KNIFEROUND"]) && game["PROMOD_KNIFEROUND"] ){
-		matchStartText setText( "^2Weapon Round Starts In..." );
+		matchStartText setText( "^5Knife Round Starting In" );
 		matchStartText.alpha = 1;
 		matchStartText.color = (0.9,0,0.2);
 	}
 	else{
-		matchStartText setText( "^2Round Starting In..." );
+		matchStartText setText( "^5Starting In" );
 		matchStartText.alpha = 1;
 		matchStartText.color = (0.3,0.9,1);
 	}
@@ -163,7 +163,7 @@ strTime( time )
 		self thread fontPulse( self );
 		self fadeOverTime( 0.3 );
 		self.alpha = 1;
-		self.Color = (0, 0, 0);
+		self.Color = (0.87, 0.93, 0.11);
 		self moveOverTime( 0.3 );
 		self.x -= 10;
 		wait 0.7;
