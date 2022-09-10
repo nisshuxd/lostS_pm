@@ -2,9 +2,9 @@
 
 
 - This Repository Contains Source Code Of LostSky Promod Mod.
-- Have a Question Contact Me On Discord @MrBoom#6276
+- Have a Question? Contact Me On Discord @MrBoom#6276
 
- Common Error ( atleast by me ) : There are Some Error Reguarding "rumble/pistol_fire_h.rmb".
+ Common Error ( atleast known by me ) : There are Some Error Reguarding "rumble/pistol_fire_h.rmb".
 
 ## Features
 - Extremely Light Weight ( Suitable For Any Type Of Server )
