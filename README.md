@@ -52,7 +52,7 @@
 
 Thanks To Everyone Who Contributed To This Mod. This Mod Isn't Fully Written By Me, Special Thanks To,
 
-- Ebc Promod
+- Criminal Promod
 - Braxi's Deathrun
 - Slesports Promod 
 
