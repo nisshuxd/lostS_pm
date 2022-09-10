@@ -4,7 +4,7 @@
 - This Repository Contains Source Code Of LostSky Promod Mod.
 - Have a Question Contact Me On Discord @ MrBoom#6276
 
-⚠️ Mostly Known Error ( atleast by me ) : There are Some Error Reguarding "rumble/pistol_fire_h.rmb".
+ Common Error ( atleast by me ) : There are Some Error Reguarding "rumble/pistol_fire_h.rmb".
 
 ## Features
 - Extremely Light Weight ( Suitable For Any Type Of Server )
@@ -29,17 +29,22 @@
 ```
 ## How to Run The Server
 
-```
+
 - You Need [CoD4x Server Files](https://cod4x.ovh/t/releases) To Run This Mod.
 - Clone This Mod Into Your Mods Folder "COD4_DIRECTORY/Mods"
 - Use runWindows.bat or runLinux.sh to Start a Basic Server With This Mod.
-```
+
 
 ## Screenshots
+
 ![Main Menu](Screenshots/Screenshot1.png)
+
 ![Class Menu](Screenshots/Screenshot2.png)
+
 ![Player Menu](Screenshots/Screenshot3.png)
+
 ![InGame](Screenshots/Screenshot4.png)
+
 ![Credits](Screenshots/Screenshot5.png)
 
 ## Credits
