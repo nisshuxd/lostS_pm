@@ -32,6 +32,7 @@
 
 - You Need [CoD4x Server Files](https://cod4x.ovh/t/releases) To Run This Mod.
 - Clone This Mod Into Your Mods Folder "COD4_DIRECTORY/Mods"
+- Put GeoIP.dat to Your CoD4 Directory.
 - Use runWindows.bat or runLinux.sh to Start a Basic Server With This Mod.
 
 
