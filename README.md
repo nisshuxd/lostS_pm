@@ -2,7 +2,7 @@
 
 
 - This Repository Contains Source Code Of LostSky Promod Mod.
-- Have a Question? Contact Me On Discord @MrBoom#6276
+- Have a Question? Contact Me On Discord @𝙉𝙞𝙨𝙝~#6276
 
  Common Error ( atleast known by me ) : There are Some Error Reguarding "rumble/pistol_fire_h.rmb".
 
@@ -56,4 +56,4 @@ Thanks To Everyone Who Contributed To This Mod. This Mod Isn't Fully Written By 
 - Braxi's Deathrun
 - Slesports Promod 
 
-*Happy Coding*
+*Happy Modding*
